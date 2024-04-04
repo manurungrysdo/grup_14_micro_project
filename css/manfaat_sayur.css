@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+nav {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    position: initial;
+    /* Navbar akan tetap di bagian atas */
+    width: 99%;
+    /* Lebar navbar mengisi seluruh lebar halaman */
+    z-index: 1000;
+    /* Z-index untuk memastikan navbar tampil di atas konten lain */
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 70px;
+    position: relative;
+    /* Untuk posisi relatif agar dropdown muncul di posisi relatif dari item menu utama */
+}
+
+
+.nav-links li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #3e8e41;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 5px;
+    display: block;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    /* Menambahkan transisi jika diinginkan */
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    padding: 15px;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.016);
+    z-index: 1;
+    opacity: 0;
+    /* Atur opacity ke 0 agar awalnya tersembunyi */
+    transition: opacity 0.9s ease;
+    /* Tambahkan efek transisi */
+}
+
+/* Tampilkan dropdown ketika item menu utama di-hover */
+.nav-links li:hover .dropdown-content {
+    display: block;
+    opacity: 2;
+    /* Atur opacity ke 1 ketika dropdown ditampilkan */
+}
+
+
+
+
+
+
+/*pada bagian manfaat Sayur*/
+.manfaat-sayuran {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: transparent;
+}
+
+.manfaat-sayuran h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.manfaat-sayuran-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.manfaat-sayuran-item:hover {
+    background-color: #4ddb7f;
+    border-radius: 5%;
+}
+
+.manfaat-sayuran-item {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.manfaat-sayuran-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.manfaat-sayuran-item h3 {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #000000;
+}
+
+
+
+
+
+.manfaat-sayuran {
+    text-align: center;
+    /* Mengatur konten di tengah */
+}
+
+.lihat-lebih-banyak {
+    margin-top: 20px;
+    /* Menambahkan margin atas agar tombol tidak terlalu dekat dengan daftar */
+    padding: 1rem 2rem;
+    background-color: #116121;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lihat-lebih-banyak:hover {
+    background-color: #0a8334;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*bagian footer*/
+footer {
+    background-color: #224d2d;
+    padding: 20px 70;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-column:last-child {
+    margin-right: 30;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 20px;
+}
+
+.footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #248e5e;
+}
+
+.footer-column img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-column li {
+    color: #ffffff;
+}
+
+.footer-column .footer-color {
+    color: #248e5e;
+}
+
+.footer-column ul:nth-child(2) {
+    margin-left: 20px;
+}
+
+.footer-column ul:last-child {
+    margin-left: 20px;
+}
+
+.footer-column .medsos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 200;
+}
+
+.footer-column .medsos a img {
+    flex-grow: 1;
+    flex-basis: 200;
+    width: 80%;
+    height: auto;
+
+}
+
+.footer-column .medsos a {
+    padding: 5px;
+}
+
+.footer-column li {
+    display: flex;
+}
+
+.footer-column li img {
+    padding: 4px;
+    width: 8%;
+    height: auto;
+}
+
+.footer-column ul li {
+    color: #1db265;
+}
+
+footer .copy {
+    text-align: center;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer-column ul:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .footer-column ul:last-child {
+        margin-left: 0;
+    }
+}
